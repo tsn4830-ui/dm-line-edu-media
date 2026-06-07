@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>飯後動一動：用『短時間活動』壓平餐後血糖高峰（每坐 30 分鐘就起來動一下）｜阿婷醫師的控糖小撇步</title>
+<style>
+  :root { --accent:#0b7a6b; --ink:#1c1c1c; --muted:#666; --bg:#f4f7f6; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { margin:0; font-family:"PingFang TC","Noto Sans CJK TC","Microsoft JhengHei",sans-serif;
+         background:var(--bg); color:var(--ink); }
+  .wrap { max-width:520px; margin:0 auto; padding:16px; }
+  .card { background:#fff; border-radius:18px; box-shadow:0 4px 18px rgba(0,0,0,.08); overflow:hidden; }
+  .head { background:var(--accent); color:#fff; padding:16px 18px; }
+  .head .show { font-size:13px; opacity:.9; }
+  .head .topic { font-size:20px; font-weight:700; margin-top:4px; line-height:1.35; }
+  .pad { padding:16px 18px 20px; }
+  .time { display:flex; justify-content:space-between; font-variant-numeric:tabular-nums;
+          color:var(--muted); font-size:14px; margin:2px 2px 8px; }
+  input[type=range] { width:100%; height:34px; accent-color:var(--accent); }
+  .row { display:flex; gap:10px; align-items:center; justify-content:center; margin-top:8px; }
+  button { font-family:inherit; border:none; border-radius:14px; cursor:pointer; }
+  .skip { background:#e8efee; color:var(--accent); font-size:16px; font-weight:600; padding:14px 14px; min-width:84px; }
+  .play { background:var(--accent); color:#fff; font-size:24px; width:74px; height:74px; border-radius:50%; }
+  .speeds { display:flex; gap:8px; justify-content:center; margin-top:14px; flex-wrap:wrap; }
+  .sp { background:#eef2f1; color:var(--ink); font-size:15px; padding:10px 14px; }
+  .sp.active { background:var(--accent); color:#fff; }
+  .poster { display:block; width:100%; }
+  .note { font-size:12px; color:var(--muted); padding:12px 18px 18px; line-height:1.6; }
+  a.dl { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="head">
+      <div class="show">🎧 阿婷醫師的控糖小撇步</div>
+      <div class="topic">飯後動一動：用『短時間活動』壓平餐後血糖高峰（每坐 30 分鐘就起來動一下）</div>
+    </div>
+    <div class="pad">
+      <audio id="a" preload="metadata" src="https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-05/audio_short.m4a"></audio>
+      <div class="time"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+      <input id="seek" type="range" min="0" max="1000" value="0" step="1" aria-label="進度條（可拖曳快轉）">
+      <div class="row">
+        <button class="skip" id="back" aria-label="倒退15秒">⏪ 15秒</button>
+        <button class="play" id="pp" aria-label="播放或暫停">▶</button>
+        <button class="skip" id="fwd" aria-label="快轉15秒">15秒 ⏩</button>
+      </div>
+      <div class="speeds" id="speeds">
+        <button class="sp" data-r="0.75">0.75×</button>
+        <button class="sp active" data-r="1">1×</button>
+        <button class="sp" data-r="1.25">1.25×</button>
+        <button class="sp" data-r="1.5">1.5×</button>
+        <button class="sp" data-r="2">2×</button>
+      </div>
+    </div>
+    <img class="poster" src="https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-05/infographic_nlm.jpg" alt="本週衛教圖卡">
+    <div class="note">本內容為一般衛教，不取代醫師診療；有打胰島素或吃降血糖藥物者運動請注意低血糖。
+      <br>音檔下載：<a class="dl" href="https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-05/audio_short.m4a" download>點此下載 m4a</a></div>
+  </div>
+</div>
+<script>
+  var a=document.getElementById('a'), pp=document.getElementById('pp'),
+      seek=document.getElementById('seek'), cur=document.getElementById('cur'),
+      dur=document.getElementById('dur'); var dragging=false;
+  function fmt(t){ if(!isFinite(t))return '0:00'; t=Math.max(0,t|0); return (t/60|0)+':'+('0'+(t%60)).slice(-2); }
+  a.addEventListener('loadedmetadata',function(){ dur.textContent=fmt(a.duration); });
+  a.addEventListener('timeupdate',function(){ if(!dragging){ cur.textContent=fmt(a.currentTime);
+      seek.value=a.duration?Math.round(a.currentTime/a.duration*1000):0; } });
+  a.addEventListener('ended',function(){ pp.textContent='▶'; });
+  pp.onclick=function(){ if(a.paused){ a.play(); pp.textContent='⏸'; } else { a.pause(); pp.textContent='▶'; } };
+  document.getElementById('back').onclick=function(){ a.currentTime=Math.max(0,a.currentTime-15); };
+  document.getElementById('fwd').onclick=function(){ a.currentTime=Math.min(a.duration||1e9,a.currentTime+15); };
+  seek.addEventListener('input',function(){ dragging=true; if(a.duration) cur.textContent=fmt(seek.value/1000*a.duration); });
+  seek.addEventListener('change',function(){ if(a.duration) a.currentTime=seek.value/1000*a.duration; dragging=false; });
+  document.getElementById('speeds').addEventListener('click',function(e){ var b=e.target.closest('.sp'); if(!b)return;
+      a.playbackRate=parseFloat(b.dataset.r);
+      [].forEach.call(this.querySelectorAll('.sp'),function(x){x.classList.remove('active');}); b.classList.add('active'); });
+</script>
+</body>
+</html>
