@@ -1,4 +1,75 @@
-<!doctype html><meta charset="utf-8">
-<title>糖尿病衛教 LINE 媒體</title>
-<h1>糖尿病衛教 LINE 每週媒體素材</h1>
-<p>本站僅托管每週 LINE 衛教推播用的圖片與音檔（公開、供 LINE 讀取）。</p>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>阿婷醫師的控糖小撇步｜收聽目錄</title>
+<meta property="og:title" content="阿婷醫師的控糖小撇步｜收聽目錄">
+<meta property="og:description" content="搜尋主題、點開就能聽。糖尿病衛教語音與圖卡。">
+<style>
+  :root{--accent:#0b7a6b;--ink:#1c1c1c;--muted:#666;--bg:#f4f7f6;}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{margin:0;font-family:"PingFang TC","Noto Sans CJK TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--ink);}
+  .wrap{max-width:640px;margin:0 auto;padding:16px;}
+  header{background:var(--accent);color:#fff;border-radius:18px;padding:18px 20px;margin-bottom:14px;}
+  header h1{margin:0;font-size:22px;}
+  header p{margin:6px 0 0;font-size:14px;opacity:.92;}
+  .searchbox{position:sticky;top:8px;z-index:5;margin-bottom:14px;}
+  #q{width:100%;font-size:18px;padding:14px 16px;border:2px solid #cfe0dc;border-radius:14px;outline:none;}
+  #q:focus{border-color:var(--accent);}
+  .count{font-size:13px;color:var(--muted);margin:2px 4px 12px;}
+  .card{display:flex;gap:14px;align-items:center;background:#fff;border-radius:16px;box-shadow:0 3px 12px rgba(0,0,0,.07);padding:12px;margin-bottom:12px;}
+  .card img{width:84px;height:150px;object-fit:cover;border-radius:10px;flex:none;background:#eee;}
+  .meta{flex:1;min-width:0;}
+  .meta .date{font-size:12px;color:var(--muted);}
+  .meta .title{font-size:17px;font-weight:700;line-height:1.4;margin:3px 0 10px;}
+  .play{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-size:16px;font-weight:600;padding:10px 18px;border-radius:12px;}
+  .empty{text-align:center;color:var(--muted);padding:40px 10px;}
+  footer{text-align:center;color:var(--muted);font-size:12px;padding:18px 10px 30px;line-height:1.7;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🎧 阿婷醫師的控糖小撇步</h1>
+    <p>收聽目錄 ── 搜尋主題、點開就能聽</p>
+  </header>
+  <div class="searchbox">
+    <input id="q" type="search" inputmode="search" placeholder="🔍 搜尋主題，例如：低血糖、運動、飲食…" aria-label="搜尋主題">
+  </div>
+  <div class="count" id="count"></div>
+  <div id="list"></div>
+  <div class="empty" id="empty" style="display:none;">找不到符合的主題，換個關鍵字試試 🙂</div>
+  <footer>本內容為一般衛教，不取代醫師診療。<br>光田綜合醫院 新陳代謝科　曾士婷醫師 關心您</footer>
+</div>
+<script>
+  var listEl=document.getElementById('list'), countEl=document.getElementById('count'),
+      emptyEl=document.getElementById('empty'), q=document.getElementById('q');
+  var EP=[];
+  function esc(s){return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function render(items){
+    listEl.innerHTML=items.map(function(e){
+      return '<div class="card">'+
+        '<img src="'+esc(e.thumb)+'" alt="" loading="lazy">'+
+        '<div class="meta"><div class="date">'+esc(e.date)+'</div>'+
+        '<div class="title">'+esc(e.topic)+'</div>'+
+        '<a class="play" href="'+esc(e.player)+'">▶ 點我收聽</a></div></div>';
+    }).join('');
+    countEl.textContent='共 '+items.length+' 集';
+    emptyEl.style.display=items.length?'none':'block';
+  }
+  function filter(){
+    var k=q.value.trim().toLowerCase();
+    var items=!k?EP:EP.filter(function(e){
+      return ((e.topic||'')+' '+(e.tags||'')).toLowerCase().indexOf(k)>=0;
+    });
+    render(items);
+  }
+  q.addEventListener('input',filter);
+  fetch('./episodes.json?t='+Date.now()).then(function(r){return r.json();}).then(function(d){
+    EP=(d.episodes||d||[]).slice().sort(function(a,b){return (b.date||'').localeCompare(a.date||'');});
+    render(EP);
+  }).catch(function(){ countEl.textContent='清單載入失敗'; });
+</script>
+</body>
+</html>
