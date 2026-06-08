@@ -48,7 +48,8 @@
       <div class="topic">低血糖怎麼辦？認得出來、用『15-15 法則』救回來（嚴重時要會用升糖素）</div>
     </div>
     <div class="pad">
-      <audio id="a" preload="metadata" src="https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-14/audio_short.m4a"></audio>
+      <audio id="a" preload="auto" playsinline src="https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-14/audio_short.m4a"></audio>
+      <div id="hint" style="text-align:center;font-size:13px;color:#888;margin:6px 0 2px;">點播放後會先有幾秒前奏音樂，請稍候 🎵</div>
       <div class="time"><span id="cur">0:00</span><span id="dur">0:00</span></div>
       <input id="seek" type="range" min="0" max="1000" value="0" step="1" aria-label="進度條（可拖曳快轉）">
       <div class="row">
@@ -66,7 +67,7 @@
     </div>
     <img class="poster" src="https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-14/infographic_nlm.jpg" alt="本週衛教圖卡">
     <div class="note">本內容為一般衛教，不取代醫師診療；有打胰島素或吃降血糖藥物者運動請注意低血糖。
-      <br>音檔下載：<a class="dl" href="https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-14/audio_short.m4a" download>點此下載 m4a</a></div>
+      <br>若按上方播放沒反應，可改用系統播放器：<a class="dl" href="https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-14/audio_short.m4a">直接開啟音檔</a>　|　<a class="dl" href="https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-14/audio_short.m4a" download>下載 m4a</a></div>
   </div>
 </div>
 <script>
@@ -78,7 +79,17 @@
   a.addEventListener('timeupdate',function(){ if(!dragging){ cur.textContent=fmt(a.currentTime);
       seek.value=a.duration?Math.round(a.currentTime/a.duration*1000):0; } });
   a.addEventListener('ended',function(){ pp.textContent='▶'; });
-  pp.onclick=function(){ if(a.paused){ a.play(); pp.textContent='⏸'; } else { a.pause(); pp.textContent='▶'; } };
+  a.addEventListener('playing',function(){ pp.textContent='⏸'; });
+  a.addEventListener('waiting',function(){ pp.textContent='⏳'; });
+  a.addEventListener('pause',function(){ if(!a.ended) pp.textContent='▶'; });
+  pp.onclick=function(){
+    if(a.paused){
+      pp.textContent='⏳';
+      var p=a.play();
+      if(p&&p.catch) p.catch(function(e){ pp.textContent='▶';
+        alert('此瀏覽器擋住了自動播放，請點下方「直接開啟音檔」用系統播放器收聽。'); });
+    } else { a.pause(); pp.textContent='▶'; }
+  };
   document.getElementById('back').onclick=function(){ a.currentTime=Math.max(0,a.currentTime-15); };
   document.getElementById('fwd').onclick=function(){ a.currentTime=Math.min(a.duration||1e9,a.currentTime+15); };
   seek.addEventListener('input',function(){ dragging=true; if(a.duration) cur.textContent=fmt(seek.value/1000*a.duration); });
