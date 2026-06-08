@@ -68,7 +68,9 @@
   q.addEventListener('input',filter);
   fetch('./episodes.json?t='+Date.now()).then(function(r){return r.json();}).then(function(d){
     EP=(d.episodes||d||[]).slice().sort(function(a,b){return (b.date||'').localeCompare(a.date||'');});
-    render(EP);
+    // 支援用網址帶入主題：?q=低血糖（給 Rich Menu / 分享連結用）
+    try{ var pq=new URLSearchParams(location.search).get('q'); if(pq){ q.value=pq; } }catch(e){}
+    if(q.value){ filter(); } else { render(EP); }
   }).catch(function(){ countEl.textContent='清單載入失敗'; });
 </script>
 </body>
