@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-06-21",
+      "topic": "糖尿病護腳：每天 1 分鐘，看腳保平安",
+      "tags": "足部照護 護腳 糖尿病足 神經病變 傷口 鞋襪 長輩",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-21/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-21/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-21/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-21/audio_short.m4a"
+    },
+    {
       "date": "2026-06-19",
       "topic": "端午節控糖：粽子這樣吃，血糖比較穩",
       "tags": "飲食 粽子 端午 糯米 醣類 節慶 過節 吃",
