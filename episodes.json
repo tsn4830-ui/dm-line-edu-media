@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-06-28",
+      "topic": "生病日顧血糖：感冒、腸胃炎時不要硬撐",
+      "tags": "生病日 感冒 腸胃炎 發燒 嘔吐 補水 血糖監測 酮體 SGLT2 胰島素 就醫警訊",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-28/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-28/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-28/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-06-28/audio_short.m4a"
+    },
+    {
       "date": "2026-06-21",
       "topic": "夏季高溫顧血糖",
       "tags": "夏天 夏季 高溫 中暑 補水 脫水 胰島素保存 低血糖 試紙 用藥 飲食",
