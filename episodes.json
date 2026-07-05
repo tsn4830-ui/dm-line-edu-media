@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-07-05",
+      "topic": "肌力訓練幫控糖：讓肌肉變成血糖倉庫",
+      "tags": "肌力訓練 阻力運動 有氧運動 第2型糖尿病 長輩友善 運動安全 低血糖 足部安全",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-07-05/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-07-05/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-07-05/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-07-05/audio_short.m4a"
+    },
+    {
       "date": "2026-06-28",
       "topic": "生病日顧血糖：感冒、腸胃炎時不要硬撐",
       "tags": "生病日 感冒 腸胃炎 發燒 嘔吐 補水 血糖監測 酮體 SGLT2 胰島素 就醫警訊",
