@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-07-12",
+      "topic": "糖尿病足部照護：每天一分鐘，顧好雙腳",
+      "tags": "足部照護 護腳 糖尿病足 神經病變 傷口 水泡 剪指甲 鞋襪 截肢預防",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-07-12/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-07-12/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-07-12/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-07-12/audio_short.m4a"
+    },
+    {
       "date": "2026-07-05",
       "topic": "肌力訓練幫控糖：讓肌肉變成血糖倉庫",
       "tags": "肌力訓練 阻力運動 有氧運動 第2型糖尿病 長輩友善 運動安全 低血糖 足部安全",
