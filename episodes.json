@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-08-02",
+      "topic": "認識糖化血色素 HbA1c：你的三個月控糖成績單",
+      "tags": "HbA1c 糖化血色素 A1C 控糖目標 平均血糖 回診 檢驗 抽血",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-02/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-02/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-02/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-02/audio_short.m4a"
+    },
+    {
       "date": "2026-07-26",
       "topic": "睡得好，血糖更穩：今晚先做 3 件事",
       "tags": "睡眠 控糖 睡眠衛生 失眠 睡眠呼吸中止 第2型糖尿病 長輩友善",
