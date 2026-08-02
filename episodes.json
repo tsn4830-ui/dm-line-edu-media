@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-08-02-auto",
+      "topic": "牙齦出血別忽略：糖尿病更要顧牙周",
+      "tags": "糖尿病 口腔照護 牙周病 牙齦出血 潔牙 洗牙 牙醫",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-02-auto/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-02-auto/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-02-auto/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-02-auto/audio_short.m4a"
+    },
+    {
       "date": "2026-08-02",
       "topic": "認識糖化血色素 HbA1c：你的三個月控糖成績單",
       "tags": "HbA1c 糖化血色素 A1C 控糖目標 平均血糖 回診 檢驗 抽血",
