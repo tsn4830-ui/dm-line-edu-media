@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-08-09",
+      "topic": "腎臟早期沒感覺：每年看 eGFR＋尿白蛋白",
+      "tags": "糖尿病 腎臟 慢性腎臟病 eGFR UACR 尿白蛋白 腎功能 篩檢",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-09/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-09/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-09/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-08-09/audio_short.m4a"
+    },
+    {
       "date": "2026-08-02-auto",
       "topic": "牙齦出血別忽略：糖尿病更要顧牙周",
       "tags": "糖尿病 口腔照護 牙周病 牙齦出血 潔牙 洗牙 牙醫",
