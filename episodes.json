@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-09-20",
+      "topic": "糖友顧心：沒有劇烈胸痛，也別大意",
+      "tags": "糖尿病,心肌梗塞,急性冠心症,119,心血管",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-09-20/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-09-20/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-09-20/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-09-20/audio_short.m4a"
+    },
+    {
       "date": "2026-09-13-auto",
       "topic": "糖友也要顧肝：脂肪肝常沒感覺",
       "tags": "脂肪肝,MASLD,肝纖維化,第二型糖尿病",
