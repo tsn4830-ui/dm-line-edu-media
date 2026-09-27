@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-09-27-auto",
+      "topic": "控糖累了，不是你不努力：認識糖尿病困擾",
+      "tags": "糖尿病困擾 心理健康 自我照護 回診 溝通 壓力 小目標",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-09-27-auto/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-09-27-auto/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-09-27-auto/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-09-27-auto/audio_short.m4a"
+    },
+    {
       "date": "2026-09-27",
       "topic": "中秋連假後，血糖慢慢收心回來",
       "tags": "節後 中秋 收心 控糖 規律三餐 運動 血糖監測 回診 A1c 團圓",
