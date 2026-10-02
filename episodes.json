@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-10-02",
+      "topic": "政府「健康幣」10/1 上路：糖友顧健康，集點換好禮",
+      "tags": "健康幣 衛福部 健保快易通 健康存摺 集點 健檢 疫苗 癌症篩檢 糖尿病 預防保健",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-02/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-02/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-02/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-02/audio_short.m4a"
+    },
+    {
       "date": "2026-09-27-auto",
       "topic": "控糖累了，不是你不努力：認識糖尿病困擾",
       "tags": "糖尿病困擾 心理健康 自我照護 回診 溝通 壓力 小目標",
