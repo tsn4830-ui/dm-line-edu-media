@@ -53,7 +53,7 @@
         '<img src="'+esc(e.thumb)+'" alt="" loading="lazy">'+
         '<div class="meta"><div class="date">'+esc(e.date)+'</div>'+
         '<div class="title">'+esc(e.topic)+'</div>'+
-        '<a class="play" href="'+esc(e.player)+'">▶ 點我收聽</a></div></div>';
+        '<a class="play" href="'+esc(e.player)+'">'+esc(e.cta||'▶ 點我收聽')+'</a></div></div>';
     }).join('');
     countEl.textContent='共 '+items.length+' 集';
     emptyEl.style.display=items.length?'none':'block';
