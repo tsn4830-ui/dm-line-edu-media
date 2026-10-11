@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-10-11",
+      "topic": "糖友可以吃水果：整顆、定量、不喝果汁",
+      "tags": "糖尿病 水果 果汁 飲食 份量 碳水化合物 膳食纖維",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-11/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-11/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-11/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-11/audio_short.m4a"
+    },
+    {
       "date": "2026-10-09",
       "topic": "糖友常見的脂肪肝：早點發現，還能逆轉",
       "tags": "脂肪肝 代謝性脂肪肝 MASLD 肝纖維化 FIB-4 減重 超音波 糖尿病 肝臟 飲食 運動",
