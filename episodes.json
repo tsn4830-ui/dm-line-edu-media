@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-10-18",
+      "topic": "吃 Metformin 久了，記得留意維生素 B12",
+      "tags": "糖尿病 Metformin 二甲雙胍 維生素B12 手腳麻 貧血 用藥安全",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-18/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-18/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-18/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-18/audio_short.m4a"
+    },
+    {
       "date": "2026-10-11",
       "topic": "糖友可以吃水果：整顆、定量、不喝果汁",
       "tags": "糖尿病 水果 果汁 飲食 份量 碳水化合物 膳食纖維",
