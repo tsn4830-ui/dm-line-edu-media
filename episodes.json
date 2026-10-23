@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-10-23",
+      "topic": "颱風天，糖友這樣顧血糖最安心",
+      "tags": "颱風 停電 胰島素保存 備藥 慢箋 低血糖 備糖 涉水 足部 生病日 血糖監測 糖尿病",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-23/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-23/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-23/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-10-23/audio_short.m4a"
+    },
+    {
       "date": "2026-10-18",
       "topic": "長期控糖，也要留意維生素 B12",
       "tags": "糖尿病 維生素B12 手腳麻 疲倦 貧血 營養 神經健康 Metformin",
