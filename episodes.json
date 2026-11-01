@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-11-01",
+      "topic": "手腳麻別忍：認識糖尿病周邊神經病變",
+      "tags": "糖尿病 周邊神經病變 手麻 腳麻 刺痛 灼熱 感覺變鈍 年度篩檢",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-01/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-01/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-01/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-01/audio_short.m4a"
+    },
+    {
       "date": "2026-10-25",
       "topic": "糖友護腎：抽血也別忘了驗尿",
       "tags": "糖尿病 腎臟 UACR 尿白蛋白 eGFR 腎功能 篩檢 護腎",
