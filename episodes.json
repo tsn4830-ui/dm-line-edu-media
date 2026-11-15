@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-11-15",
+      "topic": "看得清楚，也要看眼底：糖尿病視網膜定期檢查",
+      "tags": "眼睛 眼底 視網膜 糖尿病視網膜病變 散瞳 眼底攝影 視力 併發症",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-15/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-15/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-15/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-15/audio_short.m4a"
+    },
+    {
       "date": "2026-11-08",
       "topic": "糖友護腎：早點發現，把腎顧好",
       "tags": "腎臟 糖尿病腎病變 UACR 尿蛋白 eGFR 腎功能 洗腎 護腎 血壓 SGLT2 控糖 併發症",
