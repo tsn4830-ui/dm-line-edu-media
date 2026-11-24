@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-11-25",
+      "topic": "現在護腎，還來得及嗎？",
+      "tags": "糖尿病 腎臟 蛋白尿 eGFR UACR KDIGO SGLT2i 心腎保護",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-25/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-25/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-25/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-25/audio_short.m4a"
+    },
+    {
       "date": "2026-11-22",
       "topic": "無糖不等於無醣：看懂營養標示",
       "tags": "無糖 無添加糖 營養標示 總碳水化合物 每份 份量 食品標示 控糖",
