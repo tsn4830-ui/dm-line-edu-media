@@ -1,6 +1,15 @@
 {
   "episodes": [
     {
+      "date": "2026-11-29",
+      "topic": "選後安心控糖：不管結果如何，顧好血糖和心情",
+      "tags": "選舉 情緒 壓力 血糖 焦慮 憂鬱 睡眠 熬夜 開票 飲酒 低血糖 控糖 身心 作息 回診",
+      "player": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-29/play.html",
+      "card": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-29/card.jpg",
+      "thumb": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-29/card_preview.jpg",
+      "audio": "https://tsn4830-ui.github.io/dm-line-edu-media/2026-11-29/audio_short.m4a"
+    },
+    {
       "date": "2026-11-25",
       "topic": "現在護腎，還來得及嗎？",
       "tags": "糖尿病 腎臟 蛋白尿 eGFR UACR KDIGO SGLT2i 心腎保護",
